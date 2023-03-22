@@ -29,6 +29,10 @@
 
 
 ## BFS , DFS
+
+* BFS
+* DFS
+
 ## TBD
 
 
