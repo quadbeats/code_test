@@ -28,9 +28,7 @@ public class BOJ11660 {
 		
 
 		
-//		for(int i=1; i<=N; i++) {
-//			System.out.println(Arrays.toString(board[i]));
-//		}
+		StringBuilder sb = new StringBuilder();
 		for(int i=0; i<M; i++) {
 			stk = new StringTokenizer(br.readLine());
 			int x1 = Integer.parseInt(stk.nextToken());
@@ -44,12 +42,14 @@ public class BOJ11660 {
 				//System.out.println(board[k][y2] + " SDD"+ board[k][y1-1]);
 				
 			}
-			System.out.println(sum);
+			sb.append(sum+"\n");
+			//System.out.println(sum);
 		
 			
 			
 		}
 		
+		System.out.println(sb.toString());
 		
 		
 		
