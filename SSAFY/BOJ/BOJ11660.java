@@ -28,16 +28,24 @@ public class BOJ11660 {
 		
 
 		
-		for(int i=1; i<=N; i++) {
-			System.out.println(Arrays.toString(board[i]));
-		}
+//		for(int i=1; i<=N; i++) {
+//			System.out.println(Arrays.toString(board[i]));
+//		}
 		for(int i=0; i<M; i++) {
 			stk = new StringTokenizer(br.readLine());
 			int x1 = Integer.parseInt(stk.nextToken());
 			int y1 = Integer.parseInt(stk.nextToken());
 			int x2 = Integer.parseInt(stk.nextToken());
 			int y2 = Integer.parseInt(stk.nextToken());
-			
+			int sum=0;
+			for(int k=x1; k<=x2; k++) {
+				
+				sum += board[k][y2]-board[k][y1-1];
+				//System.out.println(board[k][y2] + " SDD"+ board[k][y1-1]);
+				
+			}
+			System.out.println(sum);
+		
 			
 			
 		}
